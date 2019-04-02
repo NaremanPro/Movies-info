@@ -1,0 +1,81 @@
+
+body {
+  background: url("http://www.greenxf.com/phoneico/2019-1/2019141656643506.jpg") no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+
+h1 {
+  background: url(http://apod.nasa.gov/apod/image/0603/coma_misti.jpg) -80px -80px;
+  color: red;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: bold;
+  font-size: 100px;
+  font-family: arial, helvetica;
+  width: 600px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+p {
+  font-size: 50px;
+  padding: 80px 50px;
+  text-shadow: 2px 2px #1aff1a;
+}
+
+input[type=text] {
+  width: 550px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  font-size: 30px;
+  text-align: center;
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 20px 50px 20px 50px;
+
+}
+
+#button {
+  background-color: #000080;
+  border: none;
+  color: white;
+  font-size: 20px;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
+
+.title {
+  font-size: 50px;
+  color: #7300e6;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+.summary {
+  font-size: 30px;
+  padding: 80px 50px;
+  font-style: italic;
+}
+
+.date {
+  font-size: 30px;
+  padding: 80px 50px;
+}
+
+.average {
+  font-size: 30px;
+  padding: 80px 50px;
+  text-shadow: 3px 3px #1aff1a;
+}
+
+.Copyrights {
+  font-size: 22px;
+  font-family: 'Indie Flower', cursive;
+}
