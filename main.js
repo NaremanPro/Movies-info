@@ -45,13 +45,34 @@ function getMovieData (event) {
   })
 }
 // Adding a callback to have a click
-document.getElementById("button").addEventListener("click", getMovieData);
+document.getElementById("buttonSearch").addEventListener("click", getMovieData);
 
 // ************************************************************************
 
 // this is the second api
-fetch("http://www.omdbapi.com/?t=" + searchValue +"&apikey=372f4e36")
-  .then(function(response) {
-    return response.json();
-  })
-      .then(function(data) {
+function movieInfo(event) {
+  // event.preventDefault();
+  var searchValue = document.getElementById("search").value;
+  console.log(searchValue);
+  var arrId = ["Title", "Website", "Runtime", "Genre", "Director", "Writer", "Actors", "Language", "Country", "Awards", "Type", "BoxOffice", "Production"];
+  console.log(arrId);
+  fetch("http://www.omdbapi.com/?t=" + searchValue +"&apikey=372f4e36")
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      // var val = Object.values();
+      // console.log(val);
+      // var keys = data.Object.keys();
+      // console.log(keys);
+      // var index = 0;
+      arrId.forEach(function(el) {
+      // index = keys.ingexOf(el);
+      document.getElementById(el).textContent = data.el;
+     })
+    // .catch(function(error) {
+    //   console.log(error);
+    //  })
+ })
+}
+document.getElementById("buttonInfo").addEventListener("click", movieInfo);
