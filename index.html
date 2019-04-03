@@ -1,67 +1,115 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="style.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> SMS-Movies.DB </title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMS-Movies.DB</title>
   </head>
   <body>
-      <section class="headline">
-      <h1> SMS Movies.DB </h1>
-    </section>
+    <section class="headline"><h1>SMS Movies.DB</h1></section>
     <section>
       <p><b> search for your favorite movie </b></p>
     </section>
     <form>
-      <input type="text" id="search" placeholder="Search for movie & TV Shows..." value="">
+      <input
+        type="text"
+        id="search"
+        placeholder="Search for movie & TV Shows..."
+        value=""
+      />
     </form>
 
-  <button id="button" type="button" name="search"><b>Search</b></button>
-  <button type="button" name="button">More information</button>
-  <span id="title1" class="title"></span>
-  <img id="image1" class="image" src="Error.src" onerror="this.src=' '"/>
-  <section>
-    <span id="date1" class="date"></span>
-  </section>
-  <section>
-  <span id="summary1" class="summary"></span>
-  </section>
-  <section>
-  <span id="average1" class="average"></span>
-  </section>
-  <span id="title2" class="title"></span>
+    <button id="buttonSearch" type="button" name="search"><b>Search</b></button>
+    <button id="buttonInfo" type="button" name="info"><b>More information</b></button>
+    <span id="title1" class="title"></span>
+    <img src="#" id="image1" class="image" src="Error.src" onerror="this.src=' '"
+    />
+    <section><span id="date1" class="date"></span></section>
+    <section><span id="summary1" class="summary"></span></section>
+    <section><span id="average1" class="average"></span></section>
+    <span id="title2" class="title"></span>
 
-  <img src="#" id="image2" class="image" class="image" src="Error.src" onerror="this.src=' '"/>
+    <img
+      src="#"
+      id="image2"
+      class="image"
+      src="Error.src"
+      onerror="this.src=' '"
+    />
 
-  <section>
-  <span id="date2" class="date"></span>
-  </section>
+    <section><span id="date2" class="date"></span></section>
 
-  <section>
-  <span id="summary2" class="summary"></span>
-  </section>
+    <section><span id="summary2" class="summary"></span></section>
 
-  <section>
-  <span id="average2" class="average"></span>
-  </section>
+    <section><span id="average2" class="average"></span></section>
 
-  <span id="title3" class="title"></span>
+    <span id="title3" class="title"></span>
 
-  <img src="#" id="image3" class="image" class="image" src="Error.src" onerror="this.src='
-  <section>
-  <span id="date3" class="date"></span>
-  </section>
+    <img src="#" id="image3" class="image" class="image" src="Error.src"
+    onerror="this.src=' '" />
+    <section><span id="date3" class="date"></span></section>
+    <section><span id="summary3" class="summary"></span></section>
+    <section><span id="average3" class="average"></span></section>
 
-  <section>
-    <span id="summary3" class="summary"></span>
-  </section>
-  <section>
-    <span id="average3" class="average"></span>
-  </section>
-      <footer class="Copyrights">Copyrights © Lotus 2019</footer>
-      <script type="text/javascript" src="main.js"></script>
+    <section>
+      <table>
+        <tr>
+          <th> Name of movie </th>
+          <td id="Title"></td>
+        </tr>
+        <tr>
+          <th> Website </th>
+          <td id="Website"></td>
+        </tr>
+        <tr>
+          <th> Run time </th>
+          <td id="Runtime"></td>
+        </tr>
+        <tr>
+          <th> Genre </th>
+          <td id="Genre"></td>
+        </tr>
+        <tr>
+          <th> Director </th>
+          <td id="Director"></td>
+        </tr>
+        <tr>
+          <th> Writer </th>
+          <td id="Writer"></td>
+        </tr>
+        <tr>
+          <th> Actors </th>
+          <td id="Actors"></td>
+        </tr>
+        <tr>
+          <th> Language </th>
+          <td id="Language"></td>
+        </tr>
+        <tr>
+          <th> Country </th>
+          <td id="Country"></td>
+        </tr>
+        <tr>
+          <th> Awards </th>
+          <td id="Awards"></td>
+        </tr>
+        <tr>
+          <th> Type </th>
+          <td id="Type"></td>
+        </tr>
+        <tr>
+          <th> Box Office </th>
+          <td id="BoxOffice"></td>
+        </tr>
+        <tr>
+          <th> Production </th>
+          <td id="Production"></td>
+        </tr>
+
+      </table>
+    </section>
+    <footer class="Copyrights">Copyrights © Lotus 2019</footer>
+    <script type="text/javascript" src="main.js"></script>
   </body>
-
 </html>
